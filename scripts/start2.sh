@@ -55,6 +55,8 @@ EOF
 	fi
 
 	echo 'FLUSH PRIVILEGES;' >> $tfile
+	
+	echo $tfile
 
 	# run sql in tempfile
 	echo "[i] run tempfile: $tfile"
