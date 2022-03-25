@@ -26,6 +26,8 @@ else
 	# save sql
 	echo "[i] Create temp file: $tfile"
 	cat << EOF > $tfile
+-- SET @@SESSION.sql_mode = 'ANSI_QUOTES';
+SET @@SESSION.sql_mode = '';
 USE mysql;
 FLUSH PRIVILEGES;
 DELETE FROM mysql.user;
