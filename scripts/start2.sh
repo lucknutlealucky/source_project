@@ -28,7 +28,6 @@ else
 	cat << EOF > $tfile
 -- SET @@SESSION.sql_mode = 'ANSI_QUOTES';
 SET @@SESSION.sql_mode = '';
-PRINT 'USE mysql';
 USE mysql;
 PRINT 'FLUSH PRIVILEGES';
 FLUSH PRIVILEGES;
